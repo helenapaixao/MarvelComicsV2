@@ -1,11 +1,17 @@
 import React from "react";
-import { Container } from "./styles";
-import Logo from '../../assets/logo.png'
+import { Container, Content } from "./styles";
+import Logo from "../../assets/logo.png";
+import { FiSearch } from "react-icons/fi";
 
 const Header: React.FC = () => {
   return (
     <Container>
-      <img src={Logo} alt="Logo"/>
+      <Content>
+        <img src={Logo} alt="Logo" />
+
+        <input placeholder="Buscar"></input>
+        <FiSearch />
+      </Content>
     </Container>
   );
 };
